@@ -143,7 +143,7 @@ small {
   border: 1px solid gray;
   border-radius: 10px;
   margin-bottom: 10px;
-  background-color: lightgray;
+  background-color: lightcyan;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -201,6 +201,9 @@ small {
   overflow: hidden;
   flex-shrink: 0;
 }
+.event h3{
+  color: #ED553B
+}
 .event img{
   width: 480px;
   height: 200px;
@@ -221,3 +224,70 @@ small {
   border-radius: 40px;
   color: #056fff
 }
+
+.contact{
+  background-color: #E5BD46;
+  color: #008896;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px}
+ 
+  .social{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    padding: 5px;
+  } 
+  .social.twitter{
+    background-image: url('../Img/twitter.png');
+  }
+  .social.facebook{
+    background-image: url('../Img/facebook.png');
+  }
+  .social.instagram{
+    background-image: url('../Img/instagram.png');
+  }
+  .social.platzi{
+    width: 80px;
+    height: 30px;
+    background-size: 80px 30px;
+    background-image: url('../Img/platzi.png');
+  }
+  #button{
+    display: inline-block;
+    margin-top: 10px;
+    background: transparent;
+    color: #FE101A;
+    border-color: gray;
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 80px;
+  }
+  #email{
+    border-color: gray;
+    padding: 5px 20px 5px 25px;
+    background-image: url('../Img/email.png');
+    background-size: 15px 15px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    border-radius: 10px;
+    height: 30px;
+  
+  }
+  .footer{
+    background-color: #112F41;
+    color: #00E536;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+  .footer a{
+    color: #00E536;
+    vertical-align: middle;
+  }
