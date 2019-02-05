@@ -68,7 +68,7 @@ ul{
 }
 .header a:hover{
   color: #112F41;
-  background-color: #4FB99F;
+  background-color: #FEFF6D;
 }
 .header label{
   color: #ED553B;
@@ -81,7 +81,7 @@ ul{
 }
 .header label:hover{
   color: #112F41;
-  background-color: #4FB99F;
+  background-color: #FEFF6D;
 }
 
 .heroe{
@@ -112,5 +112,112 @@ h1 strong{
   object-fit: cover;
 }
 
+.huertas{
+  margin: 30px 10px;
+  padding: 10px;
+  background-color: #6BE876;
+}
+.huertas strong{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+  color: #FE9400;
+  text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 40 0px;
+  padding: 10px;
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  margin: 0;
+}
+small {
+  font-size: 80%;
+}
+.type-crops{
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: lightgray;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.crop-details{
+  width: 450px;
+  margin: 0 auto;
+  display: inline-block;
+  flex-shrink: 1;
+}
+.type-crop{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.plants-crop,
+.date-crop,
+.url-crop{
+  margin: 10px 0;
+}
+.detail-crop{
+  font-size: 20px
+}
+.imageContainer-crop{
+  display: inline-flex;
+  width: 220px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+.image-crop{
+  width:300px ;
+  height: 200px;
+  margin: 10px 10px:
+}
 
-
+.project{
+  margin: 30px 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+.event{
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: lightgoldenrodyellow;
+  width: 480px;
+  justify-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.event img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.event-detail{
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event-url{
+  border: 1px solid #056fff;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 40px;
+  color: #056fff
+}
