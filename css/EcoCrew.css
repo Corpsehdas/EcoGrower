@@ -428,7 +428,7 @@ width: auto;
  }
  .crop-details{
   width: auto;
-  font-size: 16px;
+  font-size: 18px;
  }
  .plants-crop{
 font-size: 1em;
@@ -519,7 +519,7 @@ font-size: 1em;
     padding: 0;
   }
   .crop-details{
-    font-size: 12px;
+    font-size: 16px;
    }
    .plants-crop, .date-crop, .url-crop, .detail-crop{
      margin: .3em 0;
@@ -560,6 +560,18 @@ font-size: 1em;
     font-size: 1.3em;
   }
   .crop-details{
-    font-size: 10px;
+    font-size: 14px;
+   }
+   .date-crop{
+    font-size: 1em;
+   }
+   .type-crop{
+     font-size: 1.5em;
+   }
+   .detail-crop{
+    font-size: 0.9em;
+   }
+   .url-crop{
+    font-size: 1em;
    }
 }
