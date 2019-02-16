@@ -315,7 +315,6 @@ small {
     
   } 
   .social.link{
-    /* background-image: url('../Img/twitter.png'); */
     color: white;
     display: inline-block;
     height: 50px;
@@ -496,7 +495,7 @@ font-size: 1em;
 
   .menu{
     position: fixed;
-    background: rgba(5, 111, 255, .9);
+    background: rgba(139, 171, 214, 0.7);
     z-index: 3;
     top: 0;
     left: -100vw;
@@ -510,6 +509,7 @@ font-size: 1em;
   .menu.active{
     left: 0;
   }
+  
   .huertas{
     margin: 10px;
   }

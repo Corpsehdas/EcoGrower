@@ -155,32 +155,29 @@
         </footer>
         <script>
             console.log('Hola mundo');
-            
-           /*  const ipad = window.matchMedia('screen and (max-width: 767px)'); */
+            const ipad = window.matchMedia('screen and (max-width: 767px)'); 
             const menu = document.querySelector('.menu');
-            const burgerButton = document.querySelector('#burger-menu');
+            const burgerButton = document.querySelector('#burguer-menu');
 
-            burgerButton.addEventListener('click', hideShow);
+            
 
-            console.log(menu);
-            console.log(burgerButton);
-            
-            
-            /* ipad.addListener(validation); */
-            
-            /* function validation(event) {
-	            if (event.matches) {
-                    console.log('true');
-                   burgerButton.addEventListener('click', hideShow);
-                  } else {
-                	console.log('false');
-                  burgerButton.removeEventListener('click', hideShow);
-                 }
+            ipad.addListener(validation)
+
+            function validation(event){
+                (event.matches) ?
+                burgerButton.addEventListener('click',hideShow) :
+                burgerButton.removeEventListener('click',hideShow);
+
             }
- */
+            
+            menu.addEventListener('click', () => 
+            menu.classList.remove('active'))
+
             function hideShow() {
-	            menu.classList.contains('active') ? menu.classList.remove('active') : menu.classList.add('active');
-            }
+                menu.classList.contains('active') ? 
+                menu.classList.remove('active') : 
+                menu.classList.add('active');
+             }
         </script>
     </body>
 </html>
