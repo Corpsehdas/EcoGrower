@@ -1,0 +1,106 @@
+body{
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ .hero{
+   background: #ACBF89;
+   color: #32411A;
+   padding: 30px;
+   display: grid;
+   grid-template-columns: minmax(auto, 1024px); 
+   justify-content: center;
+  }
+ .hero-container{
+   display: grid;
+   grid-template-columns: 100px 1fr 320px;
+   grid-template-areas: " badge title form"
+                        " . description form"
+                        " . countdown form";
+   gap: 10px;
+ }
+
+.badge{
+  grid-area: badge;
+}
+.badge img {
+  max-width: 100px;
+}
+.title{
+  grid-area: title;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.form{
+  grid-area: form;
+  text-align: center;
+  background: #607635;
+  opacity: .7;
+  border-radius: 25px;
+  padding: 1.5em;
+}
+.form input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1 px blanchedalmond;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.form p{
+  font-size: 20px;
+  color: #93BE3C;
+  margin-bottom: 1em;
+}
+.form button{
+  background: #722F1E;
+  color: antiquewhite;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 5px solid green;
+  font-size: 16px;
+  display: inline-block;
+}
+.countdown {
+  grid-area: countdown;
+}
+.description{
+  grid-area: description;
+}
+.countdown p{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+}
+.countdown span{
+  font-size: 33px;
+  text-align: center;
+  font-weight: 300;
+}
+.countdown span::after{
+  content: ":";
+  display: inline-block;
+  margin: 0 5px;
+}
+.countdown span:last-child::after{
+  display: none;
+}
+p{
+  margin: 0;
+}
+
+@media screen and (max-width: 768px){
+  .hero-container{
+    display: grid;
+    grid-template-columns: 100px 1fr ;
+    grid-template-areas: " badge title "
+                        " description description "
+                        " form form "
+                        " countdown countdown ";
+    gap: 10px;
+  }
+}

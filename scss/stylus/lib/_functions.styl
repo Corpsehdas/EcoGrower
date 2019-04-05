@@ -1,0 +1,24 @@
+
+theme(themeSelected = toggleTheme)
+    if themeSelected
+    	background-color black
+    	color white
+    else
+    	background-color white
+    	color black
+
+flag-url = "https://image.flaticon.com/sprites/new_packs/551843-square-country-simple-flags.png"
+
+flags = { uk: -36px, usa: -236px, japan: -436px }
+
+.container
+	border: 1px solid red;
+.flag
+  	width: 130px
+ 	height: 128px
+  	background-position-y: -30px
+  	background-image: url(flag-url)
+
+for flag in flags
+  	.flag.flag-{flag}
+    		background-position-x: flags[flag]        
