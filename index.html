@@ -4,6 +4,9 @@
         <meta charset="UTF-8" />
         <title>EcoGrower</title>
         <link rel="icon" type="image/png" href="img/icon.png">
+        <style>
+        
+        </style>
         <meta name="viewport" content="width=device-width, initial-scale=1 ">
     </head>
     <body>
@@ -11,7 +14,7 @@
         <header class="header">
             <div class="container">
                 <figure class="logo">
-                    <img src="img/Logo.png" alt="Logo" />
+                    <img src="Img/Logo.png" alt="Logo" />
                 </figure> 
                 <nav class="menu">
                     <ul>
@@ -50,7 +53,7 @@
                         <p class="url-crop"> <small> <strong>Puedes verlo en:</strong> https://www.Eco-Grower.co </small></p>
                     </div>
                     <figure class="imageContainer-crop"> 
-                        <img class="image-crop" src="img/raiz.png" alt="Eco-Grower" />
+                        <img class="image-crop" src="Img/raiz.png" alt="Eco-Grower" />
                      </figure>      
                     </article>
                 <article class="type-crops">
@@ -62,7 +65,7 @@
                         <p class="url-crop"> <small> <strong>Puedes verlo en:</strong> https://www.Eco-Grower.co </small></p>
                     </div>
                     <figure class="imageContainer-crop"> 
-                        <img class="image-crop" src="img/fruto.jpg" alt="Eco-Grower" />
+                        <img class="image-crop" src="Img/fruto.jpg" alt="Eco-Grower" />
                      </figure>         
                     </article>
                 <article class="type-crops">
@@ -74,7 +77,7 @@
                         <p class="url-crop"> <small> <strong>Puedes verlo en:</strong> https://www.Eco-Grower.co </small></p>
                     </div>
                     <figure class="imageContainer-crop"> 
-                        <img class="image-crop" src="img/hojas.jpg" alt="Eco-Grower" />
+                        <img class="image-crop" src="Img/hojas.jpg" alt="Eco-Grower" />
                      </figure>         
                 </article>
             </div>
@@ -84,7 +87,7 @@
                 <h2>Proyectos Destacados</h2>
                 <article class="event">
                     <figure class="event-imageContainer">
-                        <img class="event-image" src="img/biela.jpg">          
+                        <img class="event-image" src="Img/biela.jpg">          
                     </figure>
                     <div class="event-detail">
                         <h3 class="event-title">Biela por la ciudad</h3>
@@ -94,7 +97,7 @@
                 </article>
                 <article class="event">
                     <figure class="event-imageContainer">
-                        <img class="event-image" src="img/comunal.jpg">
+                        <img class="event-image" src="Img/comunal.jpg">
                     </figure>
                     <div class="event-detail">
                         <h3 class="event-title">Huertas comunales </h3>
@@ -140,46 +143,44 @@
                         <a href="https://youtube.com/corpsehdas" class="social link"target="_blank"><i class=" icon-youtube"></i></a>
                     </div>
                 </div>
-            </section>
-            <footer class="footer">
-                <div class="container">
-                    <div>
-                        <p>Curso Git y GitHub Platzi 2019 <a href="https://platzi.com" class="social platzi"> </a></p>
-                    </div>    
-                    <div>
-                        <p>Designed with 🔥 @_@  &#9760 by <a href="https:www.facebook.com/CorpseHdas"> @HaroldAvila </a></p>
-                    </div>    
-                </div>
-            </footer>
-            <link rel="stylesheet" href="css/EcoCrew.min.css">
-            <script>
-            console.log('Hola mundo');
-            const ipad = window.matchMedia('screen and (max-width: 767px)'); 
-            const menu = document.querySelector('.menu');
-            const burgerButton = document.querySelector('#burguer-menu');
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div>
+                    <p>Curso Git y GitHub Platzi 2019 <a href="https://platzi.com" class="social platzi"> </a></p>
+                </div>    
+                <div>
+                    <p>Designed with 🔥 @_@  &#9760 by <a href="https:www.facebook.com/CorpseHdas"> @HaroldAvila </a></p>
+                </div>    
+            </div>
+        </footer>
+        <link rel="stylesheet" href="css/EcoCrew.min.css">
+        <script>
+        console.log('Hola mundo');
+        const ipad = window.matchMedia('screen and (max-width: 767px)'); 
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burguer-menu');
+    
+        ipad.addListener(validation)
 
-            
+        function validation(event){
+            (event.matches) ?
+            burgerButton.addEventListener('click',hideShow) :
+            burgerButton.removeEventListener('click',hideShow);
 
-            ipad.addListener(validation)
+        }
+        validation(ipad);
+        
+        menu.addEventListener('click', () => 
+        menu.classList.remove('active'))
 
-            function validation(event){
-                (event.matches) ?
-                burgerButton.addEventListener('click',hideShow) :
-                burgerButton.removeEventListener('click',hideShow);
-
+        function hideShow() {
+            menu.classList.contains('active') ? 
+            menu.classList.remove('active') : 
+            menu.classList.add('active');
             }
-            validation(ipad);
-            
-            menu.addEventListener('click', () => 
-            menu.classList.remove('active'))
-
-            function hideShow() {
-                menu.classList.contains('active') ? 
-                menu.classList.remove('active') : 
-                menu.classList.add('active');
-             }
         </script>
-             <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Roboto:400,400i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Roboto:400,400i" rel="stylesheet">
     </body>
     </html>
     

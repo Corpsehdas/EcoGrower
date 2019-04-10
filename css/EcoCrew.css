@@ -302,85 +302,85 @@ small {
   flex-wrap: wrap;
 }
  
-  .social{
-    display: inline-flex;
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
-    margin-top: 1em;
-    justify-content: flex-end;
-    padding: 0.2em;
-    
-  } 
-  .social.link{
-    color: white;
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-  .social.platzi{
-    width: 80px;
-    height: 30px;
-    background-size: 80px 30px;
-    background-image: url('../Img/platzi.png');
-  }
-  #button{
-    display: inline-block;
-    margin-top: 10px;
-    background: transparent;
-    color: #FE101A;
-    border-color: gray;
-    padding: 10px 5px;
-    border-radius: 10px;
-    width: 80px;
-  }
-  #email{
-    border-color: gray;
-    padding: 5px 20px 5px 25px;
-    background-image: url('../Img/email.png');
-    background-size: 15px 15px;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    border-radius: 10px;
-    height: 30px;
+.social{
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  margin-top: 1em;
+  justify-content: flex-end;
+  padding: 0.2em;
   
-  }
-  .footer{
-    background-color: #112F41;
-    color: #00E536;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .footer a{
-    color: #00E536;
-    vertical-align: middle;
-  }
+} 
+.social.link{
+  color: white;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.social.platzi{
+  width: 80px;
+  height: 30px;
+  background-size: 80px 30px;
+  background-image: url('../Img/platzi.png');
+}
+#button{
+  display: inline-block;
+  margin-top: 10px;
+  background: transparent;
+  color: #FE101A;
+  border-color: gray;
+  padding: 10px 5px;
+  border-radius: 10px;
+  width: 80px;
+}
+#email{
+  border-color: gray;
+  padding: 5px 20px 5px 25px;
+  background-image: url('../Img/email.png');
+  background-size: 15px 15px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  border-radius: 10px;
+  height: 30px;
 
-  .burger-button{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, .8);
-    display: none;
-    line-height: 40px;
-    text-align: center;
-    position: fixed;
-    z-index: 4;
-    left: 5px;
-    top: 5px;
-    color: white
-  }
+}
+.footer{
+  background-color: #112F41;
+  color: #00E536;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer a{
+  color: #00E536;
+  vertical-align: middle;
+}
 
-  /* desktop first que empiece desde el mas grande */
-  /*4k*/
+.burger-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: white
+}
+
+/* desktop first que empiece desde el mas grande */
+/*4k*/
 
 @media screen and (max-width: 2000px){
   .project h2{
@@ -412,56 +412,54 @@ small {
 }
   /*tablet*/
 @media screen and (max-width: 767px){
-
-.type-crops{
-  display: block;
-}
-.crop-details {
-width: auto;
-}
-.imageContainer-crop{
-  width: 100%;
-  text-align: center;
- }
- .image-crop{
-   max-width: 100%;
- }
- .crop-details{
+  .type-crops{
+    display: block;
+  }
+  .crop-details {
   width: auto;
-  font-size: 18px;
- }
- .plants-crop{
-font-size: 1em;
- }
- .date-crop{
+  }
+  .imageContainer-crop{
+    width: 100%;
+    text-align: center;
+  }
+  .image-crop{
+    max-width: 100%;
+  }
+  .crop-details{
+    width: auto;
+    font-size: 18px;
+  }
+  .plants-crop{
   font-size: 1em;
- }
- .type-crop{
-   font-size: 1.5em;
- }
- .detail-crop{
-  font-size: 0.9em;
- }
- .url-crop{
-  font-size: 1em;
- }
- .event-detail{
-  margin: -2em .5em .5em;
-}
-.project{
-  margin: 15px 10px 10px 10px;
-  padding: 0;
-}
- h2{
-  margin: 0 0 10px 0;
-}
+  }
+  .date-crop{
+    font-size: 1em;
+  }
+  .type-crop{
+    font-size: 1.5em;
+  }
+  .detail-crop{
+    font-size: 0.9em;
+  }
+  .url-crop{
+    font-size: 1em;
+  }
+  .event-detail{
+    margin: -2em .5em .5em;
+  }
+  .project{
+    margin: 15px 10px 10px 10px;
+    padding: 0;
+  }
+  h2{
+    margin: 0 0 10px 0;
+  }
 }
   /*phone*/
 @media screen and (max-width: 480px){
   .burger-button{
    display: block;
   }
-
   h1{
     font-size: 1.5em;
   }
@@ -492,7 +490,6 @@ font-size: 1em;
   .header .logo{
     text-align: center;
   }
-
   .menu{
     position: fixed;
     background: rgba(139, 171, 214, 0.7);
@@ -509,11 +506,9 @@ font-size: 1em;
   .menu.active{
     left: 0;
   }
-  
   .huertas{
     margin: 10px;
   }
-  
   .project{
     margin: 15px 10px;
     padding: 0;
@@ -521,38 +516,38 @@ font-size: 1em;
   .crop-details{
     font-size: 16px;
    }
-   .plants-crop, .date-crop, .url-crop, .detail-crop{
-     margin: .3em 0;
-   }
-   .type-crop{
-     margin-bottom: .3em;
-     padding: 0.1em;
-   }
-   .event{
-     width: auto;
-     flex-shrink: initial;
-    }
-    .event img{
-      width: 100%;
-    }
-    .contact{
-      height: auto;
-      text-align: center;
-      display: block;
-      padding: 0;
-    }
-    .social{
-      margin-top: 0.8em;
-      justify-content: center;
-    }
-    .footer{
-      display: block;
-      text-align: center;
-      border: 1px solid transparent;
-    }
-    .footer p{
-      margin: 0.5em;
-    }
+  .plants-crop, .date-crop, .url-crop, .detail-crop{
+    margin: .3em 0;
+  }
+  .type-crop{
+    margin-bottom: .3em;
+    padding: 0.1em;
+  }
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img{
+    width: 100%;
+  }
+  .contact{
+    height: auto;
+    text-align: center;
+    display: block;
+    padding: 0;
+  }
+  .social{
+    margin-top: 0.8em;
+    justify-content: center;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+  .footer p{
+    margin: 0.5em;
+  }
 }
   /*miniphone*/
 @media screen and (max-width: 380px){
