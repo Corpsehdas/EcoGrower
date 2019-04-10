@@ -135,7 +135,7 @@ ul{
 }
 
 .heroe{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', system-ui;
   height: 300px;
   margin: 10px auto;
   display: flex;
@@ -180,7 +180,7 @@ h2{
   padding: 10px;
 }
 h3{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', system-ui;
   font-weight: bold;
   font-size: 25px;
   padding: 10px;
