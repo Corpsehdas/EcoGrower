@@ -1,0 +1,38 @@
+
+/*--------------------------------*\
+    $FUNCTION
+\*--------------------------------*/
+
+$fs : (
+  big: 24px,
+  normal: 16px,
+  small: 14px,
+  x-small: 12px,
+);
+
+$layers:(
+dafult: 0,
+first: 1,
+back: 2
+);
+
+$name-pais:peru brasil chile ecuador colombia bolivia Venezuela argentina Uruguay paraguay;
+$icon-width: 24px;
+$icon-height: 24px;
+$icons: url('bandera-paises.png');
+$i:0;
+
+.sprite-pais {
+   background-image: $icons;
+   background-repeat: no-repeat;
+   width:  $icon-width;
+   height:  $icon-height;
+   display: inline-block;
+}
+
+@each $sprite-pais in ( $name-pais ) {
+  .bandera-#{ $sprite-pais } {
+      background-position: ($i) 0;
+  }
+  $i: $i + $icon-height;
+}

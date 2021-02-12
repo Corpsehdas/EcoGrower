@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ .container{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, 250px);
+   gap: 5px;
+ }
+ .item {
+   border-radius: 5px;
+   padding: 10px;
+   background: gray;
+   display: flex;
+   align-items: center;
+ }
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.l1{
+  grid-row-end: span 3;
+}
+.l2{
+  grid-row-end: span 2;
+}
+.l3{
+  grid-row-end: span 1;
+}
